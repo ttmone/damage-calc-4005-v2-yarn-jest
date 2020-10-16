@@ -26,7 +26,7 @@ jobs:
           command: yarn add --dev jest-junit
       - run:
           name: Run tests with JUnit as reporter
-          command: npx jest --ci --runInBand --reporters=default --reporters=junit
+          command: npx jest --ci --runInBand --reporters=default --reporters=jest-junit
           enviroment:
             JEST_JUNIT_OUTPUT_DIR: "./junit/test-results.xml"
           when: always
